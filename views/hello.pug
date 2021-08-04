@@ -1,14 +1,16 @@
 doctype html
 h2 HTML Forms
-form(action='/hello')
+form(method="POST" action='/hello')
   label(for='fname') First name:
   br
-  input#fname(type='text' name='fname' value='John')
-  br
-  label(for='lname') Last name:
-  br
-  input#lname(type='text' name='lname' value='Doe')
-  br
+  input#fname(type='text' name='name' value='John')
   br
   input(type='submit' value='Submit')
+
+
+//-    br
+//-   label(for='lname') Last name:
+//-   br
+//-   input#lname(type='text' name='lname' value='Doe')
+//-   br
 
